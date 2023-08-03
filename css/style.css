@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bungee Spice', cursive;
+}
+
+.body{
+    height: 100vh;
+    background-image: url("../bg.webp");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start{
+    position: absolute;
+    top: 20px;
+    right: 350px;
+    font-size: 49px;
+    font-weight: lighter;
+}
+
+#scorebox{
+    margin-top: 100px;
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    font-size: 39px;
+    font-weight: lighter;
+}
+
+#hiscorebox{
+    margin-top: 100px;
+    position: absolute;
+    top: 100px;
+    right: 1000px;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+#board{
+    margin-top: 70px;
+    background: linear-gradient(rgb(144, 219, 144), rgb(225, 225, 92));
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(hotpink, yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 8px;
+
+}
+
+.snake{
+    background-color: purple;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: 1px solid black;
+    border-radius: 10px;
+}
